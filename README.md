@@ -5,7 +5,7 @@ A website for your game
 Welcome to The Legend of Mirai, a captivating website dedicated to our immersive game world!
 
 Table of Contents
-Introduction
+<br>
 Features
 Getting Started
 Contribution

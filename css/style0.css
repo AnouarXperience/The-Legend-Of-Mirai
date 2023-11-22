@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bg {
+  background-image: url(../img/mirai1.jpg);
+  no-repeat center center/cover;
+  position: absolute;
+  background-size: 96.5%;
+  /* On doit modifier les parametres pour que le cadre flou soit proche du bord */
+  top: -50px;
+  left: -50px;
+  width: calc(100vw + 100px);
+  height: calc(100vh + 100px);
+  z-index: -1;
+  /* On change le fitre de 0 à 70px pour placer correctement
+  avec top et left qui était à 0 à la base
+  On rajoute calc(100+60) pour widht (100vw) et height (100vh) */
+  filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: white;
+}
+
+.Start{
+  border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.Start:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.Start:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
